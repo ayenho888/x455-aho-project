@@ -52,6 +52,18 @@
         float: right;
         padding-left: 20px;
       }
+
+      /*for slideshow*/
+      .mySlides {
+        display: none;
+      }
+
+      /* for scrollable area */
+      .my-scrolling {
+        height: 300px;
+        overflow: auto;
+        background-color: whitesmoke;
+      }
     </style>
   </head>
   <body>
@@ -71,7 +83,7 @@
           ></a>
         </div>
 
-        <!--Logo. Anchor to home id-->
+        <!--Logo. Anchor to home id. Increase size of logo text-->
         <a href="#home" class="w3-bar-item w3-button w3-xxlarge">GETAWAYS</a>
 
         <!-- Right-sided navbar links. Anchor to body sections. Hide them on small screens -->
@@ -84,8 +96,7 @@
           <a href="#shop" class="w3-bar-item w3-button w3-large">Shop</a>
         </div>
 
-        <!-- begin added for mobile version -->
-        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <!-- For mobile. Hide right-floated links on small screens and replace them with a menu icon -->
         <a
           href="javascript:void(0)"
           class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
@@ -93,11 +104,10 @@
         >
           <i class="fa fa-bars"></i>
         </a>
-        <!-- end added for mobile version -->
       </div>
     </div>
 
-    <!-- begin added for mobile version -->
+    <!-- For mobile sidebar nav menu, close on click, hide on M/L screens -->
     <nav
       class="w3-sidebar w3-bar-block w3-sand w3-card w3-animate-left w3-hide-medium w3-hide-large"
       style="display: none"
@@ -146,7 +156,6 @@
         >Shop</a
       >
     </nav>
-    <!-- end added for mobile version -->
 
     <!-- Header -->
     <!--create container for full size image-->
@@ -229,28 +238,212 @@
       <hr />
 
       <!-- Stay Section -->
-      <div class="w3-content w3-padding-64" id="stay">
+      <div class="w3-content" style="padding: 128px 16px" id="stay">
         <h1 class="w3-center w3-text-deep-orange">WHERE TO STAY</h1>
+        <h3 class="w3-center">
+          Luxurious resorts and cozy cottages, where time and its pressures melt
+          away.
+        </h3>
+        <br />
+        <!--2 large paragraphs of text-->
+        <!-- image embedded into text block, float left, image size -->
+        <h4>L'Auberge de Sedona</h4>
+        <p>
+          <img
+            src="./img/L'auberge-grounds.jpg"
+            class="w3-round w3-image my-float-left my-img-size-1"
+            alt="L'Auberge resort hotel"
+            style="width: 100%"
+          />
+          Staying at L'Auberge de Sedona offers an unparalleled experience of
+          luxury and tranquility amidst the stunning beauty of Sedona's red
+          rocks. This award-winning resort combines world-class amenities with a
+          serene, nature-inspired setting, making it the perfect retreat for
+          relaxation and rejuvenation. With luxurious accommodations ranging
+          from creekside cottages to hillside villas, guests can immerse
+          themselves in comfort while enjoying breathtaking views. Our luxury
+          resort seamlessly combines the tranquil beauty of nature with
+          sophisticated accommodations and world-class amenities, creating the
+          perfect destination for relaxation, adventure, and rejuvenation.
+        </p>
+        <p>
+          Enjoy the perfect balance of comfort and natural beauty, with
+          expansive views of the creek, towering red rocks, or lush forests
+          right outside your door. Reconnect with yourself at our exclusive Spa
+          at L'Auberge. Offering a range of treatments inspired by the
+          surrounding desert environment, the spa services are designed to
+          nurture the mind, body, and soul. Explore the beauty of the land,
+          embrace the energy of the vortex sites, or simply relax by the creek
+          and immerse yourself in the tranquil surroundings. The resort's
+          exceptional service, award-winning spa, and exquisite dining at Cress
+          on the Creek ensure a memorable stay.
+          <!--hyperlink to external website-->
+          <span>
+            <a
+              href="https://www.lauberge.com"
+              target="_blank"
+              class="w3-hover-opacity"
+              >Learn more</a
+            >
+          </span>
+        </p>
+        <br />
+        <h4>Amara Resort & Spa</h4>
+        <p>
+          <img
+            src="./img/amara-hotel-restaurant.jpg"
+            class="w3-round w3-image my-float-left my-img-size-1"
+            alt="Amara hotel restaurant"
+            style="width: 100%"
+          />
+          Amara Resort & Spa in Sedona offers a unique blend of luxury,
+          tranquility, and adventure, making it the perfect destination for a
+          memorable getaway. Set against the backdrop of Sedona's iconic red
+          rock formations, this stylish resort invites you to unwind in
+          beautifully appointed rooms that reflect the area's natural beauty.
+          Enjoy the resort's serene infinity pool or savor locally inspired
+          cuisine at SaltRock Southwest Kitchen. The resort's luxurious
+          amenities elevate your stay, with spacious rooms featuring modern
+          comforts and private patios that bring the beauty of the surrounding
+          landscape right to your doorstep. Its world-class spa offers
+          rejuvenating treatments inspired by the natural elements, perfect for
+          restoring balance after a day of exploration.
+        </p>
+        <p>
+          Amara Resort and Spa offers an unparalleled location for those looking
+          to immerse themselves in the natural splendor of Sedona. The resort's
+          serene, creekside setting provides a peaceful atmosphere, allowing
+          guests to enjoy the sounds of the flowing water and the stunning views
+          of the surrounding landscape. Whether you're enjoying a morning coffee
+          on your private patio or stargazing by the creek in the evening, Amara
+          offers an unforgettable environment to unwind and connect with nature.
+          <span>
+            <a
+              href="https://www.amararesort.com/"
+              target="_blank"
+              class="w3-hover-opacity"
+              >Learn more</a
+            >
+          </span>
+        </p>
       </div>
 
       <hr />
 
       <!-- Eats Section -->
-      <div class="w3-container w3-padding-64" id="eats">
-        <h1>Eats</h1>
+      <div class="w3-content" style="padding: 128px 16px" id="eats">
+        <h1 class="w3-center w3-text-deep-orange">WHERE TO EAT</h1>
+        <h3 class="w3-center">
+          For seasonal ingredients and culinary innovations
+        </h3>
         <br />
-        <p>
-          We offer full-service catering for any event, large or small. We
-          understand your needs and we will cater the food to satisfy the
-          biggerst criteria of them all, both look and taste. Do not hesitate to
-          contact us.
-        </p>
+
+        <!-- Start slideshow. With caption-->
+        <div class="w3-content w3-display-container">
+          <div class="w3-display-container mySlides">
+            <img src="./img/Elote_2.jpg" style="width: 100%" />
+            <div
+              class="w3-display-topleft w3-large w3-container w3-padding-16 w3-text-white"
+            >
+              ELOTE
+            </div>
+          </div>
+
+          <div class="w3-display-container mySlides">
+            <img src="./img/SaltRockKitchen_2.jpeg" style="width: 100%" />
+            <div
+              class="w3-display-topleft w3-large w3-container w3-padding-16 w3-text-white"
+            >
+              SALT ROCK KITCHEN
+            </div>
+          </div>
+
+          <div class="w3-display-container mySlides">
+            <img src="./img/Che Ah Chi_hamachi crudo.jpg" style="width: 100%" />
+            <div
+              class="w3-display-topleft w3-large w3-container w3-padding-16 w3-text-brown"
+            >
+              CHE AH CHI
+            </div>
+          </div>
+
+          <!--2 buttons to scroll image (previous, next)-->
+          <button
+            class="w3-button w3-display-left w3-black"
+            onclick="plusDivs(-1)"
+          >
+            &#10094;
+          </button>
+          <button
+            class="w3-button w3-display-right w3-black"
+            onclick="plusDivs(1)"
+          >
+            &#10095;
+          </button>
+        </div>
+
+        <!--Scrollable text area-->
+        <div class="my-scrolling w3-padding-large">
+          <h5>Elote</h5>
+          <p>
+            Elote is known for its creative twist on Mexican cuisine, offering
+            dishes that are made with fresh, locally-sourced ingredients. Their
+            use of traditional Mexican spices and flavors makes each dish a
+            memorable experience. The restaurant has a cozy, inviting vibe with
+            beautiful views of the surrounding Sedona landscape. It's a great
+            place to relax and enjoy the stunning scenery while savoring great
+            food. Elote's signature dishes, like their Elote (grilled corn),
+            tacos, and seafood offerings, are highly praised. The unique
+            preparation and presentation elevate classic Mexican flavors. It's a
+            local favorite, and the consistent high ratings from visitors make
+            it one of Sedona's must-try spots. Locals and tourists alike rave
+            about the service and the food. If you love flavorful, high-quality
+            food in a beautiful setting, Elote is definitely a great pick!
+          </p>
+
+          <h5>Salt Rock Kitchen</h5>
+          <p>
+            Eating at SaltRock Southwest Kitchen in Sedona is a must for anyone
+            seeking a unique blend of bold Southwestern flavors and fresh, local
+            ingredients. Located in a stunning setting, the restaurant offers a
+            menu that highlights the best of Sedona's vibrant food scene, with
+            dishes like wood-fired shrimp tacos, flavorful bison burgers, and
+            fresh seafood prepared with a southwestern twist. The atmosphere is
+            relaxed yet sophisticated, making it the perfect place to unwind
+            after a day of exploring the red rocks. If you're looking for a
+            place to enjoy elevated Southwestern cuisine with stunning views and
+            a great atmosphere, SaltRock Kitchen is a top choice in Sedona.
+          </p>
+
+          <h4>Che Ah Chi</h4>
+          <p>
+            The restaurant overlooks the iconic red rock formations of Sedona,
+            making it a perfect spot for a memorable meal. Whether you're dining
+            at sunset or under the stars, the natural beauty around you enhances
+            the overall experience. Che Ah Chi takes Southwestern cuisine to the
+            next level with an upscale, contemporary twist. The menu features
+            regional ingredients like prickly pear, chilies, and local meats,
+            but the dishes are presented with creative flair. The combination of
+            bold flavors and modern techniques creates a unique dining
+            experience that you won't find just anywhere. Much of the
+            restaurant's menu is built around fresh, local, and sustainable
+            ingredients. This dedication to quality ingredients not only
+            supports local farmers and purveyors but also ensures that every
+            dish is bursting with fresh, vibrant flavors. The food is wholesome
+            yet refined, balancing indulgence with health-conscious options.
+          </p>
+        </div>
       </div>
       <hr />
 
       <!-- Sights Section -->
-      <div class="w3-container w3-padding-64" id="sights">
-        <h1>Sights</h1>
+      <div class="w3-content" style="padding: 128px 16px" id="sights">
+        <h1 class="w3-center w3-text-deep-orange">SIGHTS IN SEDONA</h1>
+        <h3 class="w3-center">
+          Uncover Sedona's iconic red rocks, scenic trails, and awe-inspiring
+          vistas
+        </h3>
+        <br />
       </div>
       <hr />
 
@@ -324,14 +517,13 @@
           href="#"
           target="_blank"
           class="fa fa-copyright w3-hover-opacity w3-text-brown"
-          >All Rights Reserved.</a
+          >2025 Ayenho. All Rights Reserved.</a
         >
       </div>
     </footer>
 
     <script>
-      // begin added for mobile version
-      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      // Mobile view: Toggle between showing and hiding the sidebar when clicking the menu icon
       var mySidebar = document.getElementById("mySidebar");
 
       function w3_open() {
@@ -342,11 +534,33 @@
         }
       }
 
-      // Close the sidebar with the close button
+      // Mobile view: Close the sidebar with the close button
       function w3_close() {
         mySidebar.style.display = "none";
       }
-      // end added for mobile version
+
+      //Javascript for slideshow, to select image to display
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
     </script>
   </body>
 </html>
