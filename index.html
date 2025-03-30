@@ -14,6 +14,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!--add jquery links for sortable table, jquery.min.js first-->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
     <style>
       body {
         font-family: "Raleway", sans-serif;
@@ -53,7 +62,7 @@
         padding-left: 20px;
       }
 
-      /*for slideshow*/
+      /*for slideshow, center it*/
       .mySlides {
         display: none;
       }
@@ -247,7 +256,7 @@
         <br />
         <!--2 large paragraphs of text-->
         <!-- image embedded into text block, float left, image size -->
-        <h4>L'Auberge de Sedona</h4>
+        <h4 class="w3-container w3-round w3-brown">L'Auberge de Sedona</h4>
         <p>
           <img
             src="./img/L'auberge-grounds.jpg"
@@ -288,7 +297,7 @@
           </span>
         </p>
         <br />
-        <h4>Amara Resort & Spa</h4>
+        <h4 class="w3-container w3-round w3-brown">Amara Resort & Spa</h4>
         <p>
           <img
             src="./img/amara-hotel-restaurant.jpg"
@@ -341,7 +350,7 @@
         <!-- Start slideshow. With caption-->
         <div class="w3-content w3-display-container">
           <div class="w3-display-container mySlides">
-            <img src="./img/Elote_2.jpg" style="width: 100%" />
+            <img src="./img/Elote.jpg" style="width: 100%" />
             <div
               class="w3-display-topleft w3-large w3-container w3-padding-16 w3-text-white"
             >
@@ -350,7 +359,7 @@
           </div>
 
           <div class="w3-display-container mySlides">
-            <img src="./img/SaltRockKitchen_2.jpeg" style="width: 100%" />
+            <img src="./img/SaltRockKitchen.jpeg" style="width: 100%" />
             <div
               class="w3-display-topleft w3-large w3-container w3-padding-16 w3-text-white"
             >
@@ -359,7 +368,7 @@
           </div>
 
           <div class="w3-display-container mySlides">
-            <img src="./img/Che Ah Chi_hamachi crudo.jpg" style="width: 100%" />
+            <img src="./img/Che Ah Chi.jpg" style="width: 100%" />
             <div
               class="w3-display-topleft w3-large w3-container w3-padding-16 w3-text-brown"
             >
@@ -381,10 +390,11 @@
             &#10095;
           </button>
         </div>
+        <br />
 
         <!--Scrollable text area-->
         <div class="my-scrolling w3-padding-large">
-          <h5>Elote</h5>
+          <h4>Elote</h4>
           <p>
             Elote is known for its creative twist on Mexican cuisine, offering
             dishes that are made with fresh, locally-sourced ingredients. Their
@@ -401,7 +411,7 @@
             food in a beautiful setting, Elote is definitely a great pick!
           </p>
 
-          <h5>Salt Rock Kitchen</h5>
+          <h4>Salt Rock Kitchen</h4>
           <p>
             Eating at SaltRock Southwest Kitchen in Sedona is a must for anyone
             seeking a unique blend of bold Southwestern flavors and fresh, local
@@ -444,13 +454,152 @@
           vistas
         </h3>
         <br />
+        <!--adding accordion button and content-->
+        <div class="w3-container">
+          <button
+            onclick="myFunction('Demo1')"
+            class="w3-btn w3-block w3-brown w3-text-white w3-left-align"
+          >
+            Hot Air Balloon Rides
+          </button>
+          <div id="Demo1" class="w3-container w3-hide">
+            <p>
+              Hot air balloon rides in Sedona offer a breathtaking and unique
+              way to experience the stunning landscapes of Arizona's red rock
+              country. As you float gently above the valley, you'll be treated
+              to panoramic views of the iconic red sandstone formations,
+              towering spires, and vibrant desert landscapes. These rides
+              typically take place early in the morning to take advantage of
+              calm winds and clear skies, providing the best visibility. Rides
+              usually last between 45 minutes to an hour, depending on the wind
+              conditions, and after landing, many balloon companies offer a
+              celebratory toast, adding a touch of tradition to the adventure.
+              Whether you're looking for a romantic experience, an adrenaline
+              rush, or simply a new perspective on Sedona's natural beauty, a
+              hot air balloon ride is an unforgettable way to explore this
+              captivating area.
+            </p>
+          </div>
+        </div>
+
+        <!--embed YouTube video-->
+
+        <h4>Hot Air Balloon Rides</h4>
+        <p>
+          Hot air balloon rides in Sedona offer a breathtaking and unique way to
+          experience the stunning landscapes of Arizona's red rock country. As
+          you float gently above the valley, you'll be treated to panoramic
+          views of the iconic red sandstone formations, towering spires, and
+          vibrant desert landscapes. These rides typically take place early in
+          the morning to take advantage of calm winds and clear skies, providing
+          the best visibility. Rides usually last between 45 minutes to an hour,
+          depending on the wind conditions, and after landing, many balloon
+          companies offer a celebratory toast, adding a touch of tradition to
+          the adventure. Whether you're looking for a romantic experience, an
+          adrenaline rush, or simply a new perspective on Sedona's natural
+          beauty, a hot air balloon ride is an unforgettable way to explore this
+          captivating area.
+        </p>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/3scgdNszvFw"
+          title="Northern Light Balloon Expeditions"
+          frameborder="0"
+        >
+        </iframe>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/2aW8iqD9oDg"
+          title="Red Rock Balloons"
+          frameborder="0"
+        >
+        </iframe>
+
+        <h4>Pink Jeep Tours</h4>
+        <p>
+          Pink Jeep Tours in Sedona are one of the most popular and exciting
+          ways to explore the stunning desert landscapes and rugged red rock
+          formations of the area. These off-road, open-air tours take place in
+          specially designed, custom-built jeeps, offering an adventurous and
+          up-close experience of Sedona's natural beauty. The tour guides, known
+          for their expertise and enthusiasm, lead you on thrilling rides across
+          rugged trails that regular vehicles can't access. Depending on the
+          tour you choose, you'll wind through picturesque canyons, climb steep
+          hills, and traverse rocky paths that provide jaw-dropping views of
+          Sedona's red rocks, vortex sites, and expansive desert surroundings.
+          There are a variety of tours to choose from based on your interests
+          and thrill level. Some of the most popular options include: Scenic Rim
+          Tour,Broken Arrow Tour, Vortex Tours, and Sunset Tour.
+        </p>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/gEbpPCTOlHM"
+          title="Scenic Rim 2.5"
+          frameborder="0"
+        >
+        </iframe>
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/u97uIRGxZJY"
+          title="Broken Arrow Tour"
+          frameborder="0"
+        >
+        </iframe>
+
+        <br />
       </div>
       <hr />
 
       <!-- Hikes Section -->
-      <div class="w3-container w3-padding-64" id="hikes">
-        <h1>Hikes</h1>
+      <div class="w3-content" style="padding: 128px 16px" id="hikes">
+        <h1 class="w3-center w3-text-deep-orange">HIKING IN SEDONA</h1>
+        <h3 class="w3-center">Your Guide to Sedona's Iconic Red Rock Hikes</h3>
+        <br />
+        <!--Sortable table with headers and rows, with hover color-->
+        <div class="w3-padding-large">
+          <table id="mytable" class="w3-table-all w3-large">
+            <thead>
+              <tr class="w3-brown">
+                <th>HIKE NAME</th>
+                <th>DIFFICULTY</th>
+                <th>DISTANCE</th>
+                <th>TIME</th>
+              </tr>
+            </thead>
+            <tr class="w3-hover-sand">
+              <td>Cathedral Rock</td>
+              <td>Moderate</td>
+              <td>1.2 miles (ascent: 700 ft)</td>
+              <td>1-2 hours</td>
+            </tr>
+            <tr class="w3-hover-sand">
+              <td>Fay Canyon</td>
+              <td>Easy</td>
+              <td>2 miles (ascent: 165 ft)</td>
+              <td>1 hour</td>
+            </tr>
+
+            <tr class="w3-hover-sand">
+              <td>Devils Bridge</td>
+              <td>Easy</td>
+              <td>2-4 miles (ascent: 500 Ft)</td>
+              <td>1-3 hours</td>
+            </tr>
+
+            <tr class="w3-hover-sand">
+              <td>Bear Mountain</td>
+              <td>Strenuous</td>
+              <td>5 miles (ascent: 1800 ft)</td>
+              <td>4-6 hours</td>
+            </tr>
+          </table>
+        </div>
       </div>
+
       <hr />
 
       <!-- Sights Section -->
@@ -539,7 +688,7 @@
         mySidebar.style.display = "none";
       }
 
-      //Javascript for slideshow, to select image to display
+      //Javascript for simple slideshow, to select image to display
       var slideIndex = 1;
       showDivs(slideIndex);
 
@@ -561,6 +710,27 @@
         }
         x[slideIndex - 1].style.display = "block";
       }
+
+      //javascript for accordion
+      function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      // javascript for sortable table, ascending/descending
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
     </script>
   </body>
 </html>
